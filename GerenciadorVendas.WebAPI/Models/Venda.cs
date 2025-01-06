@@ -20,12 +20,12 @@ public class Venda
 	[Column("valortotal")]
 	public double ValorTotal { get; set; }
 
-	public Venda(int id, string produto, int quantidade, double valorUnitario)
+	public Venda(int id, string produto, int quantidade, double valorUnit, double valorTotal)
 	{
 		Id = id;
 		Produto = produto;
 		Quantidade = quantidade;
-		ValorUnit = valorUnitario;
-		ValorTotal = valorUnitario * quantidade;
+		ValorUnit = valorUnit;
+		ValorTotal = valorTotal;
 	}
 }
